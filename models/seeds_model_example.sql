@@ -4,5 +4,5 @@
 
 SELECT * 
 FROM {{ ref('customers_v1') }} as A LEFT JOIN {{ ref('orders_v1') }} as B 
-ON A.CUST_NO = B.CUST_NO
-WHERE B.CUST_NO IS NULL 
+ON A.CUST_NO = B.CUSTOMER_NO
+WHERE B.CUSTOMER_NO IS NULL 
