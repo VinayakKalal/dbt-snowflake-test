@@ -1,0 +1,7 @@
+sources:
+  - name: landing
+    database: TEST_DB  
+    schema: PUBLIC  
+    tables:
+      - name: emp
+        identifier: EMP_V1
